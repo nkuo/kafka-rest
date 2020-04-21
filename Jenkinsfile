@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 common {
-  slackChannel = '#kafka-warn'
-  upstreamProjects = 'confluentinc/schema-registry'
+  slackChannel = ''
+  testbreakReporting = false
+  downStreamRepos = ["confluent-security-plugins", "ce-kafka-rest"]
+  disableConcurrentBuilds = true
 }
